@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="ترند للدعاية والإعلان: سوشيال ميديا، فيديو وموشن، مواقع، هوية بصرية وإعلانات. افحص حضورك الرقمي مجاناً واطلب عرض سعر.">
+<meta property="og:title" content="ترند للدعاية والإعلان | Trend Agency">
+<meta property="og:description" content="شوف شغلنا وافحص حضورك الرقمي مجاناً واطلب عرض سعر على واتساب.">
+<meta property="og:image" content="featured/1bmpftSRYemmtywa0KjbmpA_n4AzXM656.jpg">
+<meta name="theme-color" content="#821a2f">
+<link rel="icon" href="img/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ترند">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Trend Agency</title>
+</head>
+<body>
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+/* Layout: an app shell — brand band on top, single centered column, sticky tab bar (bottom on phones, top on desktop). */
+:root {
+  --brand: #821a2f;        /* Trend burgundy */
+  --brand-ink: #ffffff;
+  --gold: #c9780a;         /* Trend gold */
+  --bg: #fbf8f9;
+  --surface: #ffffff;
+  --line: #ecdfe2;
+  --fg: #23161a;
+  --muted: #76626a;
+  --chip: #f5ecee;
+  --ok: #1f7a4d; --warn: #b26a00; --bad: #b3261e;
+  --display: "Alexandria", "Segoe UI", Tahoma, sans-serif;
+  --body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --r: 14px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --brand: #9c2a41; --brand-ink: #fff; --gold: #f0a640;
+  --bg: #150c0f; --surface: #20151a; --line: #3a2a30; --fg: #f5eaed; --muted: #b9a3ab; --chip: #2c1d23;
+  --ok: #5cc98f; --warn: #f0b04a; --bad: #ff8a80; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --brand: #9c2a41; --brand-ink: #fff; --gold: #f0a640;
+  --bg: #150c0f; --surface: #20151a; --line: #3a2a30; --fg: #f5eaed; --muted: #b9a3ab; --chip: #2c1d23;
+  --ok: #5cc98f; --warn: #f0b04a; --bad: #ff8a80; color-scheme: dark }
+
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+html { direction: rtl }
+body { margin: 0; direction: rtl; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15.5px; line-height: 1.75; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--brand) }
+h1, h2, h3 { font-family: var(--display); line-height: 1.35; text-wrap: balance; margin: 0 }
+p { margin: 0 }
+a { color: inherit }
+button, input, select, textarea { font: inherit; color: inherit }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 6px }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+
+/* Header */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--brand); color: var(--brand-ink) }
+.top .wrap { display: flex; align-items: center; gap: 12px; padding-block: 10px }
+.mark { width: 42px; height: 42px; border-radius: 11px; background: rgba(255,255,255,.12); display: grid; place-items: center; flex: none }
+.mark img { width: 38px; height: 38px }
+.brandname { font-family: var(--display); font-weight: 800; font-size: 1.15rem; line-height: 1.2 }
+.brandname small { display: block; font-family: var(--body); font-weight: 500; font-size: .75rem; opacity: .8 }
+.topnav { margin-inline-start: auto; display: flex; gap: 4px }
+.topnav a { text-decoration: none; padding: 8px 14px; border-radius: 10px; font-weight: 600; font-size: .92rem; opacity: .85 }
+.topnav a[aria-current="page"] { background: rgba(255,255,255,.16); opacity: 1 }
+.wa-top { text-decoration: none; background: var(--gold); color: #1d1206; font-weight: 700; padding: 8px 14px; border-radius: 10px; font-size: .9rem; white-space: nowrap }
+
+/* Bottom tab bar (phones) */
+.tabs { display: none }
+@media (max-width: 760px) {
+  .topnav { display: none }
+  .wa-top { margin-inline-start: auto }
+  .tabs { display: grid; grid-template-columns: repeat(6, 1fr); position: fixed; inset: auto 0 0; z-index: 20; background: var(--surface); border-top: 1px solid var(--line);
+    padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px) }
+  .tabs a { display: grid; justify-items: center; gap: 2px; padding: 8px 2px 7px; text-decoration: none; font-size: .72rem; font-weight: 600; color: var(--muted) }
+  .tabs a svg { width: 22px; height: 22px }
+  .tabs a[aria-current="page"] { color: var(--brand) }
+  main { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)) }
+}
+@media (max-width: 760px) and (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tabs a[aria-current="page"] { color: var(--gold) } }
+:root[data-theme="dark"] .tabs a[aria-current="page"] { color: var(--gold) }
+
+main { padding-block: 0 48px }
+section.view { display: grid; grid-template-columns: minmax(0, 1fr); gap: 40px }
+section.view > * { min-width: 0; width: 100% }
+
+/* Hero */
+.hero { background: var(--brand); color: var(--brand-ink); position: relative; overflow: hidden }
+.hero .wrap { padding-block: 34px 40px; display: grid; gap: 18px; position: relative }
+.hero::after { content: "TR"; position: absolute; inset-inline-start: -2%; bottom: -38%; font-family: var(--display); font-weight: 800; font-size: 19rem; line-height: 1; color: rgba(255,255,255,.06); pointer-events: none }
+.eyebrow { font-size: .8rem; letter-spacing: .04em; font-weight: 600; color: var(--gold) }
+.hero .eyebrow { color: #ffc874 }
+.hero h1 { font-size: clamp(1.9rem, 6vw, 3.1rem); font-weight: 800; max-width: 17ch }
+.hero h1 em { font-style: normal; color: #ffc874 }
+.hero p.lead { max-width: 56ch; opacity: .92; font-size: 1.02rem }
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; cursor: pointer; text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 12px; font-size: .98rem }
+.btn-gold { background: var(--gold); color: #1d1206 }
+.btn-ghost { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.28) }
+.btn-brand { background: var(--brand); color: #fff }
+.btn-line { background: transparent; border: 1.5px solid var(--line); color: var(--fg) }
+.btn:disabled { opacity: .5; cursor: not-allowed }
+
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin-top: 6px; max-width: 560px }
+.stat { border-inline-start: 2px solid rgba(255,200,116,.6); padding-inline-start: 12px }
+.stat b { display: block; font-family: var(--display); font-size: 1.5rem; font-variant-numeric: tabular-nums; line-height: 1.3 }
+.stat span { font-size: .8rem; opacity: .85 }
+
+/* Sections */
+.head { display: grid; gap: 6px; margin-bottom: 18px }
+.head h2 { font-size: clamp(1.35rem, 3.6vw, 1.85rem) }
+.head p { color: var(--muted); max-width: 62ch }
+.page-head { padding-top: 28px }
+
+/* Clients strip */
+.clients { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 12px }
+.client { display: grid; justify-items: center; gap: 6px; text-align: center; font-size: .78rem; color: var(--muted); font-weight: 500 }
+.client img { width: 72px; height: 72px; object-fit: contain; border-radius: 50%; background: #fff; border: 1px solid var(--line) }
+
+/* Process */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; list-style: none; padding: 0; margin: 0; counter-reset: s }
+.steps li { counter-increment: s; display: grid; gap: 4px; padding-top: 12px; border-top: 2px solid var(--brand) }
+.steps li::before { content: "0" counter(s); font-family: var(--display); font-weight: 800; color: var(--gold); font-size: .95rem }
+.steps b { font-family: var(--display); font-size: 1.05rem }
+.steps p { color: var(--muted); font-size: .9rem }
+@media (max-width: 760px) { .steps { grid-template-columns: repeat(2, minmax(0,1fr)) } }
+
+/* Teaser cards (home) */
+.teasers { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px }
+@media (max-width: 900px) { .teasers { grid-template-columns: 1fr 1fr } .teaser.feature { grid-column: 1 / -1 } }
+.teaser { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 20px; display: grid; gap: 10px; align-content: start; text-decoration: none }
+.teaser h3 { font-size: 1.12rem }
+.teaser p { color: var(--muted); font-size: .92rem }
+.teaser .go { color: var(--brand); font-weight: 700; font-size: .92rem }
+.teaser.feature { background: linear-gradient(160deg, var(--chip), var(--surface)); border-color: var(--brand) }
+@media (max-width: 640px) { .teasers { grid-template-columns: 1fr } }
+
+/* Filters / chips */
+.filters { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; margin-bottom: 16px; scrollbar-width: none }
+.chip { flex: none; border: 1.5px solid var(--line); background: var(--surface); padding: 6px 14px; border-radius: 999px; font-weight: 600; font-size: .88rem; cursor: pointer }
+.chip[aria-pressed="true"] { background: var(--brand); color: #fff; border-color: var(--brand) }
+
+/* Work grid */
+.work { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; display: grid; grid-template-columns: 64px minmax(0,1fr); gap: 14px; align-content: start }
+.card img { width: 64px; height: 64px; border-radius: 12px; object-fit: contain; background: #fff; border: 1px solid var(--line) }
+.card h3 { font-size: 1.02rem }
+.card .client-name { font-size: .82rem; color: var(--gold); font-weight: 700 }
+.card p { grid-column: 1 / -1; color: var(--muted); font-size: .9rem }
+.tags { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px }
+.tag { font-size: .74rem; font-weight: 600; background: var(--chip); padding: 2px 10px; border-radius: 999px }
+
+/* Services */
+.svc { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px }
+.svc article { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 18px; display: grid; gap: 8px; grid-template-rows: auto auto 1fr auto }
+.svc .ico { width: 40px; height: 40px; border-radius: 10px; background: var(--chip); color: var(--brand); display: grid; place-items: center; font-family: var(--display); font-weight: 800 }
+.svc h3 { font-size: 1.04rem }
+.svc p { color: var(--muted); font-size: .9rem }
+.svc button { justify-self: start; background: none; border: 0; padding: 0; color: var(--brand); font-weight: 700; cursor: pointer; font-size: .9rem }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .svc button, :root:not([data-theme="light"]) .teaser .go, :root:not([data-theme="light"]) .svc .ico { color: var(--gold) } }
+:root[data-theme="dark"] .svc button, :root[data-theme="dark"] .teaser .go, :root[data-theme="dark"] .svc .ico { color: var(--gold) }
+
+/* Audit */
+.audit { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr); gap: 18px; align-items: start }
+@media (max-width: 860px) { .audit { grid-template-columns: 1fr } }
+.qlist { display: grid; gap: 10px; list-style: none; margin: 0; padding: 0 }
+.q { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 10px }
+.q .qt { font-weight: 600 }
+.q .qt small { display: block; color: var(--muted); font-weight: 500; font-size: .78rem }
+.seg { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px }
+.seg button { border: 1.5px solid var(--line); background: var(--bg); border-radius: 10px; padding: 7px 4px; font-weight: 600; font-size: .88rem; cursor: pointer }
+.seg button[aria-pressed="true"][data-v="2"] { background: var(--ok); border-color: var(--ok); color: #fff }
+.seg button[aria-pressed="true"][data-v="1"] { background: var(--warn); border-color: var(--warn); color: #fff }
+.seg button[aria-pressed="true"][data-v="0"] { background: var(--bad); border-color: var(--bad); color: #fff }
+.result { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 80px); background: var(--surface); border: 1.5px solid var(--brand); border-radius: var(--r); padding: 20px; display: grid; gap: 14px }
+.gauge { display: flex; align-items: center; gap: 16px }
+.gauge svg { width: 104px; height: 104px; flex: none }
+.gauge .num { font-family: var(--display); font-weight: 800; font-size: 1.7rem; font-variant-numeric: tabular-nums ; direction: ltr; unicode-bidi: isolate; text-align: right }
+.band { display: inline-block; font-weight: 700; padding: 2px 12px; border-radius: 999px; font-size: .85rem; color: #fff }
+.recs { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none }
+.recs li { font-size: .9rem; padding-inline-start: 14px; border-inline-start: 3px solid var(--gold) }
+.recs li b { display: block }
+.progress { font-size: .82rem; color: var(--muted) }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 18px; align-items: start }
+@media (max-width: 860px) { .contact { grid-template-columns: 1fr } }
+form { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 20px; display: grid; gap: 14px }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px }
+@media (max-width: 520px) { .row2 { grid-template-columns: 1fr } }
+label { display: grid; gap: 5px; font-weight: 600; font-size: .9rem }
+input, select, textarea { width: 100%; border: 1.5px solid var(--line); background: var(--bg); border-radius: 10px; padding: 10px 12px; font-weight: 400 }
+input:focus, select:focus, textarea:focus { border-color: var(--brand); outline: none }
+textarea { min-height: 90px; resize: vertical }
+fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 8px }
+legend { font-weight: 600; font-size: .9rem; margin-bottom: 6px }
+.pick { display: flex; flex-wrap: wrap; gap: 8px }
+.err { color: var(--bad); font-size: .85rem; font-weight: 600 }
+.done { background: var(--chip); border-radius: 12px; padding: 14px; display: grid; gap: 10px }
+.side { display: grid; gap: 12px }
+.info { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 18px; display: grid; gap: 4px }
+.info .k { font-size: .8rem; color: var(--muted); font-weight: 600 }
+.info .v { font-family: var(--display); font-weight: 700; font-size: 1.1rem; direction: ltr; text-align: right; font-variant-numeric: tabular-nums }
+.info .v.ar { direction: rtl }
+.copy { justify-self: start; background: none; border: 1.5px solid var(--line); border-radius: 8px; padding: 3px 10px; font-size: .8rem; font-weight: 600; cursor: pointer }
+.socials { display: flex; flex-wrap: wrap; gap: 8px }
+.socials a { text-decoration: none; font-weight: 600; font-size: .88rem; padding: 6px 12px; border-radius: 999px; background: var(--chip) }
+
+/* Featured videos */
+.feat { display: grid; gap: 14px }
+.feat-wide { border-radius: var(--r); overflow: hidden; background: #000; border: 1px solid var(--line) }
+.feat-wide video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000 }
+.feat-row { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 12px }
+@media (max-width: 860px) { .feat-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; scrollbar-width: thin } .feat-row figure { flex: 0 0 62%; scroll-snap-align: start } }
+.feat figure { margin: 0; display: grid; gap: 6px; min-width: 0 }
+.feat-row video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--r); background: #000; border: 1px solid var(--line) }
+.feat figcaption { display: grid; line-height: 1.45; padding-inline: 2px }
+.feat figcaption b { font-family: var(--display); font-size: .95rem }
+.feat figcaption span { font-size: .8rem; color: var(--muted) }
+.feat-wide + figcaption { margin-top: 2px }
+
+/* Videos */
+.vstats { display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--muted); font-size: .9rem; margin-bottom: 14px }
+.vstats b { color: var(--fg); font-family: var(--display); font-variant-numeric: tabular-nums }
+.vgrid { columns: 4 200px; column-gap: 12px }
+@media (max-width: 520px) { .vgrid { columns: 2; column-gap: 10px } }
+.vcard { break-inside: avoid; display: block; margin-bottom: 12px; text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden }
+.vthumb { position: relative; background: var(--chip) }
+.vthumb img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover }
+.vcard.h .vthumb img { aspect-ratio: 16 / 9 }
+.vthumb .play { position: absolute; inset: 0; margin: auto; width: 52px; height: 52px; border-radius: 50%; background: rgba(130,26,47,.88); display: grid; place-items: center; box-shadow: 0 4px 18px rgba(0,0,0,.3) }
+.vthumb .play svg { width: 20px; height: 20px; fill: #fff; transform: translateX(2px) }
+.vthumb .fmt { position: absolute; top: 8px; inset-inline-start: 8px; background: rgba(0,0,0,.6); color: #fff; font-size: .7rem; font-weight: 600; padding: 1px 8px; border-radius: 999px }
+.vmeta { padding: 9px 12px 11px; display: grid; gap: 1px }
+.vmeta b { font-size: .92rem; font-family: var(--display); font-weight: 700 }
+.vmeta span { font-size: .78rem; color: var(--gold); font-weight: 600 }
+.vcard:hover .play { transform: scale(1.08) }
+@media (prefers-reduced-motion: no-preference) { .vthumb .play { transition: transform .2s } }
+.chip:has(.n) { display: inline-flex; gap: 6px; align-items: baseline }
+.chip .n { opacity: .7; font-variant-numeric: tabular-nums }
+.drive-note { color: var(--muted); font-size: .85rem; margin-top: 4px }
+
+footer { color: var(--muted); font-size: .82rem; padding-block: 20px; border-top: 1px solid var(--line) }
+@media (prefers-reduced-motion: no-preference) { .view:not([hidden]) { animation: rise .35s ease both } @keyframes rise { from { transform: translateY(6px); opacity: .6 } to { transform: none; opacity: 1 } } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="mark"><img src="img/logo.png" alt="شعار ترند"></div>
+    <div class="brandname">ترند<small>Trend Agency · القاهرة</small></div>
+    <nav class="topnav" aria-label="الأقسام">
+      <a href="#home">الرئيسية</a><a href="#work">أعمالنا</a><a href="#videos">فيديوهات</a><a href="#services">خدماتنا</a><a href="#check">افحص حضورك</a><a href="#contact">تواصل</a>
+    </nav>
+    <a class="wa-top" href="https://wa.me/201095576024" target="_blank" rel="noopener">واتساب</a>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="view" id="v-home" data-view="home">
+    <div class="hero">
+      <div class="wrap">
+        <span class="eyebrow">وكالة دعاية وإعلان مصرية · من 8 سنين</span>
+        <h1>الدعاية والإعلان.. <em>من الفكرة للتأثير</em></h1>
+        <p class="lead">بنشتغل على السوشيال ميديا، المواقع، الفيديو والموشن، الهوية البصرية وإعلانات جوجل وميتا. هدفنا حاجة واحدة: عملاء أكتر لبيزنسك.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="#check">افحص حضورك الرقمي مجاناً</a>
+          <a class="btn btn-ghost" href="#contact">اطلب عرض سعر</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>+8</b><span>سنين خبرة</span></div>
+          <div class="stat"><b>+150</b><span>مشروع اتسلّم</span></div>
+          <div class="stat"><b>+12.6K</b><span>متابع على فيسبوك</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">عملاء بنشتغل معاهم</span><h2>براندات وثقت في ترند</h2></div>
+      <div class="clients" id="clients"></div>
+    </div>
+
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">أقوى أعمالنا</span><h2>اتفرج على شغلنا من هنا</h2><p>6 فيديوهات مختارة من شغلنا مع عملائنا. اضغط تشغيل وهيشتغل هنا على طول.</p></div>
+      <div class="feat">
+        <figure><div class="feat-wide"><video controls playsinline preload="none" poster="featured/1bmpftSRYemmtywa0KjbmpA_n4AzXM656.jpg" src="featured/1bmpftSRYemmtywa0KjbmpA_n4AzXM656.mp4"></video></div><figcaption><b>برومو إعلاني لتأجير السيارات</b><span>Egyptian Eagle</span></figcaption></figure>
+        <div class="feat-row">
+          <figure><video controls playsinline preload="none" poster="featured/1bHY0sUvmK03MB063nIdLHwGTK-yY7zxy.jpg" src="featured/1bHY0sUvmK03MB063nIdLHwGTK-yY7zxy.mp4"></video><figcaption><b>شوريل المعرض</b><span>TRIO Auto</span></figcaption></figure>
+          <figure><video controls playsinline preload="none" poster="featured/1lR-xKQChY2F3zOZxGwawc5F85OVjfpBh.jpg" src="featured/1lR-xKQChY2F3zOZxGwawc5F85OVjfpBh.mp4"></video><figcaption><b>قبل وبعد: هوية إنجاز</b><span>إنجاز العقارية</span></figcaption></figure>
+          <figure><video controls playsinline preload="none" poster="featured/1XnnE_9ly7v5Tya1xwb874oTHxK9cP3A_.jpg" src="featured/1XnnE_9ly7v5Tya1xwb874oTHxK9cP3A_.mp4"></video><figcaption><b>جولات في المشروعات</b><span>زيدان جروب</span></figcaption></figure>
+          <figure><video controls playsinline preload="none" poster="featured/1XgBmurAWlkyxkffseEtTzAuBH4g_MqWr.jpg" src="featured/1XgBmurAWlkyxkffseEtTzAuBH4g_MqWr.mp4"></video><figcaption><b>ريل تعريفي</b><span>Car Star</span></figcaption></figure>
+          <figure><video controls playsinline preload="none" poster="featured/1_MnDLRCZhtj64PzOJ5nlaYcq-WgKStNu.jpg" src="featured/1_MnDLRCZhtj64PzOJ5nlaYcq-WgKStNu.mp4"></video><figcaption><b>ريل محتوى طبي</b><span>د. عبدالرحمن</span></figcaption></figure>
+        </div>
+        <a class="btn btn-line" href="#videos" style="justify-self:start">شوف كل الفيديوهات ←</a>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="teasers">
+        <a class="teaser feature" href="#check">
+          <span class="eyebrow">أداة مجانية</span>
+          <h3>بيزنسك واخد كام من 100 أونلاين؟</h3>
+          <p>10 أسئلة في دقيقتين. هتعرف نقط الضعف في موقعك وصفحاتك وإعلاناتك، وتاخد توصيات تبدأ بيها النهارده.</p>
+          <span class="go">ابدأ الفحص ←</span>
+        </a>
+        <a class="teaser" href="#videos">
+          <span class="eyebrow">فيديوهات</span>
+          <h3>شوف شغلنا بعينك</h3>
+          <p id="vTeaser">ريلز وإعلانات وجولات تصوير لعملاء في العقارات والسيارات والعيادات.</p>
+          <span class="go">اتفرج على الفيديوهات ←</span>
+        </a>
+        <a class="teaser" href="#contact">
+          <span class="eyebrow">ابني باقتك</span>
+          <h3>اختار الخدمات اللي محتاجها وميزانيتك</h3>
+          <p>حدد اللي محتاجه، وفريقنا يرد عليك بعرض سعر مفصّل على واتساب.</p>
+          <span class="go">اطلب عرض سعر ←</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">طريقة شغلنا</span><h2>من أول مكالمة لحد النتيجة</h2></div>
+      <ol class="steps">
+        <li><b>نفهم بيزنسك</b><p>جلسة نعرف فيها منتجك وعميلك ومنافسينك.</p></li>
+        <li><b>نحط الخطة</b><p>استراتيجية محتوى وإعلانات بأهداف بالأرقام.</p></li>
+        <li><b>ننفّذ</b><p>تصميم، فيديو، نشر وإعلانات بفريق متخصص.</p></li>
+        <li><b>نقيس ونطوّر</b><p>تقرير شهري واضح، ونعدّل على اللي بيجيب نتيجة.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="view" id="v-work" data-view="work" hidden>
+    <div class="wrap page-head">
+      <div class="head"><span class="eyebrow">أعمالنا</span><h2>مشاريع اتنفذت لعملاء حقيقيين</h2><p>فيديوهات، هويات بصرية، مواقع وحملات سوشيال لشركات في العقارات والسيارات والأثاث والمياه والأزياء.</p></div>
+      <div class="filters" id="workFilters" role="group" aria-label="تصفية حسب النوع"></div>
+      <div class="work" id="workGrid"></div>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="view" id="v-videos" data-view="videos" hidden>
+    <div class="wrap page-head">
+      <div class="head"><span class="eyebrow">فيديوهات من شغلنا</span><h2>ريلز وإعلانات ومحتوى اتعمل لعملائنا</h2><p>اضغط على أي فيديو وهيشتغل على جوجل درايف.</p></div>
+      <div class="vstats" id="vstats"></div>
+      <div class="filters" id="vFilters" role="group" aria-label="تصفية حسب العميل"></div>
+      <div class="vgrid" id="vGrid"></div>
+      <p class="drive-note">الفيديوهات متخزنة على جوجل درايف. <a id="driveAll" href="https://drive.google.com/drive/folders/1e0gUivfVcvqWyUVZmJaFPmiTTRv-19BL" target="_blank" rel="noopener">افتح فولدر العميل كله ↗</a></p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="view" id="v-services" data-view="services" hidden>
+    <div class="wrap page-head">
+      <div class="head"><span class="eyebrow">خدماتنا</span><h2>كل اللي بيزنسك محتاجه أونلاين في مكان واحد</h2><p>اختار خدمة واضغط «اطلبها» وهنجهزلك الطلب على طول.</p></div>
+      <div class="svc" id="svcGrid"></div>
+    </div>
+  </section>
+
+  <!-- AUDIT -->
+  <section class="view" id="v-check" data-view="check" hidden>
+    <div class="wrap page-head">
+      <div class="head"><span class="eyebrow">فحص مجاني</span><h2>افحص حضورك الرقمي</h2><p>جاوب بصراحة على الأسئلة دي، والنتيجة هتتحسب قدامك على طول.</p></div>
+      <div class="audit">
+        <ol class="qlist" id="qlist"></ol>
+        <aside class="result" aria-live="polite">
+          <div class="gauge">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="var(--line)" stroke-width="10"></circle>
+              <circle id="arc" cx="50" cy="50" r="42" fill="none" stroke="var(--gold)" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 264" transform="rotate(-90 50 50)"></circle>
+            </svg>
+            <div><div class="num" id="score">—</div><span class="band" id="band" hidden></span><div class="progress" id="progress"></div></div>
+          </div>
+          <div id="recWrap" hidden>
+            <b style="font-family:var(--display)">أهم حاجات تبدأ بيها</b>
+            <ul class="recs" id="recs"></ul>
+          </div>
+          <a class="btn btn-brand" id="auditSend" href="#" target="_blank" rel="noopener" hidden>ابعت النتيجة واحجز استشارة مجانية</a>
+          <button class="btn btn-line" id="auditReset" type="button">ابدأ من الأول</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="view" id="v-contact" data-view="contact" hidden>
+    <div class="wrap page-head">
+      <div class="head"><span class="eyebrow">تواصل وسجّل</span><h2>اطلب عرض سعر لبيزنسك</h2><p>املا البيانات، والطلب هيتبعت لفريق ترند على واتساب بكل التفاصيل.</p></div>
+      <div class="contact">
+        <form id="lead" novalidate>
+          <div class="row2">
+            <label for="f-name">الاسم<input id="f-name" name="name" autocomplete="name" required></label>
+            <label for="f-phone">رقم الموبايل<input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" dir="ltr" required></label>
+          </div>
+          <div class="row2">
+            <label for="f-biz">اسم البيزنس<input id="f-biz" name="biz" placeholder="مثلاً: معرض النور للأثاث"></label>
+            <label for="f-field">المجال
+              <select id="f-field" name="field">
+                <option>عقارات</option><option>سيارات</option><option>مطاعم وكافيهات</option><option>ملابس وأزياء</option><option>عيادات وطبي</option><option>تعليم وكورسات</option><option>أثاث وديكور</option><option>متجر إلكتروني</option><option>مجال تاني</option>
+              </select>
+            </label>
+          </div>
+          <fieldset>
+            <legend>الخدمات اللي محتاجها</legend>
+            <div class="pick" id="pickSvc"></div>
+          </fieldset>
+          <fieldset>
+            <legend>الميزانية الشهرية التقريبية</legend>
+            <div class="pick" id="pickBudget"></div>
+          </fieldset>
+          <label for="f-msg">تفاصيل إضافية<textarea id="f-msg" name="msg" placeholder="إيه هدفك؟ عايز مبيعات، حجوزات، ولا انتشار؟"></textarea></label>
+          <p class="err" id="err" hidden></p>
+          <button class="btn btn-brand" type="submit">جهّز الطلب</button>
+          <div class="done" id="done" hidden>
+            <b>طلبك جاهز. افتح واتساب واضغط إرسال.</b>
+            <div class="cta-row">
+              <a class="btn btn-gold" id="waLink" href="#" target="_blank" rel="noopener">افتح واتساب وابعت</a>
+              <button class="btn btn-line" type="button" id="copyMsg">انسخ الرسالة</button>
+            </div>
+          </div>
+        </form>
+        <div class="side">
+          <div class="info"><span class="k">موبايل وواتساب</span><span class="v">0109 557 6024</span><button class="copy" type="button" data-copy="01095576024">نسخ الرقم</button></div>
+          <div class="info"><span class="k">مواعيد العمل</span><span class="v ar">الأحد – الخميس · 9ص – 6م</span></div>
+          <div class="info"><span class="k">العنوان</span><span class="v ar">القاهرة، مصر</span></div>
+          <div class="info"><span class="k">تابعنا</span>
+            <div class="socials">
+              <a href="https://www.facebook.com/trend.agency.eg" target="_blank" rel="noopener">فيسبوك</a>
+              <a href="https://www.instagram.com/trend.agency.eg" target="_blank" rel="noopener">إنستجرام</a>
+              <a href="https://www.tiktok.com/@trend.agency.eg" target="_blank" rel="noopener">تيك توك</a>
+              <a href="https://www.trend-eg.com/" target="_blank" rel="noopener">الموقع</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><footer>© 2026 ترند للدعاية والإعلان · Trend Agency · <a href="privacy.html" target="_blank" rel="noopener">سياسة الخصوصية</a></footer></div>
+</main>
+
+<nav class="tabs" aria-label="الأقسام">
+  <a href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>الرئيسية</a>
+  <a href="#work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>أعمالنا</a>
+  <a href="#videos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M10.5 9.5v5l4-2.5z" fill="currentColor"/></svg>فيديوهات</a>
+  <a href="#services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>خدماتنا</a>
+  <a href="#check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-3"/></svg>افحص</a>
+  <a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.7A8 8 0 1 1 21 12z"/></svg>تواصل</a>
+</nav>
+
+<script>
+document.documentElement.dir = "rtl"; document.documentElement.lang = "ar";
+const WA = "201095576024";
+const waUrl = t => "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+const $ = s => document.querySelector(s);
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+
+const CLIENTS = {
+  eagle:  { name: "Egyptian Eagle", img: "img/egyptain-eagle.jpg" },
+  engaz:  { name: "إنجاز العقارية", img: "img/engaz-logo.jpg" },
+  stoke:  { name: "جلابية ستوك", img: "img/stoke-stoke.jpg" },
+  zidan:  { name: "زيدان جروب", img: "img/zidan-zidan.jpg" },
+  aqsa:   { name: "الشرق الأقصى للأثاث", img: "img/alaqisi-alaqisi.jpg" },
+  stars:  { name: "نجوم النقاوة", img: "img/stars-stars.jpg" },
+  water:  { name: "ركن المياه", img: "img/water-corner-Water-Corner.png" },
+  masrat: { name: "مسارات الإبداع", img: "img/masrat-logo1.png" },
+  alnor:  { name: "النور للرخام والجرانيت", img: "img/alnor-logo.png" },
+  carstar:{ name: "Car Star", img: "img/car-star-logo.png" }
+};
+const CATS = { all: "الكل", video: "فيديو وموشن", brand: "هوية بصرية", social: "سوشيال ميديا", web: "مواقع ومتاجر" };
+const WORK = [
+  { c: "eagle", cats: ["video"], t: "فيديوهات تسويقية لتأجير السيارات", d: "فيديوهات احترافية تبرز الأسطول وتقوّي الهوية وتزوّد الحجوزات." },
+  { c: "engaz", cats: ["brand","social"], t: "هوية بصرية كاملة لشركة عقارية", d: "الشعار والألوان وأنماط التصميم وقوالب السوشيال ميديا لحضور أقوى في السوق العقاري." },
+  { c: "stoke", cats: ["video"], t: "فيديو موشن جرافيك إعلاني", d: "موشن ترويجي للزي الإسلامي يبرز جودة الخامات والتصميمات العصرية ويزوّد المبيعات." },
+  { c: "zidan", cats: ["video"], t: "فيديوهات ترويجية للاستثمار العقاري والتشطيب", d: "عرض المشروعات وأعمال التشطيب بأسلوب عصري يبني الثقة ويبرز جودة التنفيذ." },
+  { c: "aqsa", cats: ["social","video"], t: "حملة تصميمات وريلز لمعرض أثاث", d: "تصميمات وريلز على فيسبوك لأحدث الموديلات، مع مونتاج ومحتوى تسويقي زوّد التفاعل والمبيعات." },
+  { c: "stars", cats: ["social","video"], t: "تصميمات وفيديوهات لأنظمة تحلية المياه", d: "محتوى يعرض الفلاتر ومحطات التحلية ويبني الثقة في جودة المنتجات." },
+  { c: "water", cats: ["web"], t: "متجر إلكتروني لفلاتر المياه", d: "متجر بتجربة استخدام سهلة، صفحات منتجات منظمة ونظام طلب متكامل." },
+  { c: "masrat", cats: ["web"], t: "موقع شركة استشارات عقارية", d: "موقع يعرض الخدمات وتحليل الفرص الاستثمارية ويسهّل طلب الاستشارة." },
+  { c: "alnor", cats: ["web","brand"], t: "موقع لعرض الرخام والجرانيت", d: "عرض الخامات المحلية والمستوردة والأعمال السابقة، مع خدمة طلب معاينة." },
+  { c: "carstar", cats: ["video","social"], t: "حملة فيديوهات إعلانية لبيع وتأجير السيارات", d: "فيديوهات موجهة لفيسبوك وإنستجرام وتيك توك لزيادة الحجوزات والانتشار." }
+];
+const SERVICES = [
+  { k: "social", t: "إدارة السوشيال ميديا", d: "خطة محتوى شهرية، تصميمات وريلز، نشر منتظم ورد على التعليقات." },
+  { k: "ads", t: "إعلانات ممولة (ميتا وتيك توك)", d: "حملات بأهداف واضحة: رسايل، مبيعات أو حجوزات، مع تقرير بالأرقام." },
+  { k: "google", t: "إعلانات جوجل", d: "تظهر لأول ما العميل يدوّر على خدمتك في جوجل والخرائط." },
+  { k: "video", t: "إنتاج الفيديو والموشن", d: "ريلز، فيديوهات إعلانية، موشن جرافيك وتصوير منتجات." },
+  { k: "brand", t: "الهوية البصرية", d: "لوجو، ألوان، خطوط وقوالب ثابتة لكل منصاتك." },
+  { k: "web", t: "تصميم واستضافة المواقع", d: "مواقع ومتاجر سريعة بتفتح كويس على الموبايل، مع استضافة آمنة." },
+  { k: "seo", t: "كتابة المحتوى و SEO", d: "محتوى يتقري ويطلعك في نتايج البحث الأولى." },
+  { k: "wp", t: "إدارة مواقع ووردبريس", d: "تحديثات، حماية، نسخ احتياطي وتحسين سرعة." },
+  { k: "crm", t: "نظام إدارة العملاء CRM", d: "كل رسايل وطلبات العملاء في مكان واحد ومحدش يضيع منك." }
+];
+const BUDGETS = ["أقل من 5,000 ج.م", "5,000 – 15,000 ج.م", "15,000 – 30,000 ج.م", "أكتر من 30,000 ج.م", "مش متأكد"];
+
+/* Clients strip */
+Object.values(CLIENTS).forEach(c => {
+  const d = el("div", "client"); const i = el("img"); i.src = c.img; i.alt = c.name; i.loading = "lazy";
+  d.append(i, el("span", null, c.name)); $("#clients").append(d);
+});
+
+/* Work */
+let cat = "all";
+function renderWork() {
+  const g = $("#workGrid"); g.textContent = "";
+  WORK.filter(w => cat === "all" || w.cats.includes(cat)).forEach(w => {
+    const c = CLIENTS[w.c]; const a = el("article", "card");
+    const i = el("img"); i.src = c.img; i.alt = c.name; i.loading = "lazy";
+    const h = el("div"); h.append(el("div", "client-name", c.name), el("h3", null, w.t));
+    const tags = el("div", "tags"); w.cats.forEach(k => tags.append(el("span", "tag", CATS[k])));
+    a.append(i, h, el("p", null, w.d), tags); g.append(a);
+  });
+}
+Object.entries(CATS).forEach(([k, v]) => {
+  const b = el("button", "chip", v); b.type = "button"; b.setAttribute("aria-pressed", k === cat);
+  b.onclick = () => { cat = k; document.querySelectorAll("#workFilters .chip").forEach(x => x.setAttribute("aria-pressed", x === b)); renderWork(); };
+  $("#workFilters").append(b);
+});
+renderWork();
+
+/* Services + picker */
+const picked = new Set(); let budget = "";
+SERVICES.forEach((s, n) => {
+  const a = el("article"); a.append(el("span", "ico", String(n + 1)), el("h3", null, s.t), el("p", null, s.d));
+  const b = el("button", null, "اطلبها ←"); b.type = "button";
+  b.onclick = () => { picked.add(s.k); syncPick(); location.hash = "contact"; };
+  a.append(b); $("#svcGrid").append(a);
+  const p = el("button", "chip", s.t); p.type = "button"; p.dataset.k = s.k; p.id = "pick-" + s.k;
+  p.onclick = () => { picked.has(s.k) ? picked.delete(s.k) : picked.add(s.k); syncPick(); };
+  $("#pickSvc").append(p);
+});
+BUDGETS.forEach((t, n) => {
+  const p = el("button", "chip", t); p.type = "button"; p.id = "budget-" + n;
+  p.onclick = () => { budget = budget === t ? "" : t; document.querySelectorAll("#pickBudget .chip").forEach(x => x.setAttribute("aria-pressed", x.textContent === budget)); };
+  p.setAttribute("aria-pressed", "false"); $("#pickBudget").append(p);
+});
+function syncPick() { document.querySelectorAll("#pickSvc .chip").forEach(x => x.setAttribute("aria-pressed", picked.has(x.dataset.k))); }
+syncPick();
+
+/* Audit */
+const QS = [
+  { t: "عندك موقع إلكتروني بيفتح كويس وسريع على الموبايل؟", a: "الموقع", rec: ["web", "موقع سريع ومتجاوب", "أغلب عملائك جايين من الموبايل، والموقع البطيء بيخسّرك نص الزيارات."] },
+  { t: "لما حد يدوّر على نشاطك في جوجل أو الخرائط بيلاقيك؟", a: "الظهور", rec: ["seo", "اظهر في جوجل والخرائط", "سجّل Google Business Profile واشتغل على SEO لكلمات منطقتك."] },
+  { t: "عندك Meta Pixel أو Google Analytics متركب؟", a: "القياس", rec: ["ads", "ركّب أدوات القياس", "من غير Pixel مش هتعرف مين زارك ولا تقدر تعيد استهدافه بإعلان."] },
+  { t: "بتنشر على السوشيال 3 مرات أو أكتر في الأسبوع؟", a: "السوشيال", rec: ["social", "انتظام في النشر", "الصفحة اللي بتنشر بانتظام بتوصل لمتابعين أكتر بكتير من اللي بتنشر كل فين وفين."] },
+  { t: "بتنزل ريلز أو فيديوهات قصيرة بانتظام؟", a: "الفيديو", rec: ["video", "ابدأ الريلز", "الفيديو القصير هو أكتر محتوى بيوصل لناس جديدة على فيسبوك وإنستجرام وتيك توك."] },
+  { t: "عندك لوجو وألوان وتصميمات ثابتة في كل منصاتك؟", a: "الهوية", rec: ["brand", "وحّد هويتك", "العميل بيثق في البراند اللي شكله ثابت ومتعرف في كل مكان."] },
+  { t: "بترد على رسايل العملاء في أقل من ساعة؟", a: "الرد", rec: ["crm", "سرّع الرد على العملاء", "كل ساعة تأخير في الرد بتقلل فرصة البيع. نظام CRM ورسايل جاهزة بيحلوا ده."] },
+  { t: "بتعمل إعلانات ممولة بهدف واضح وبتقيس نتايجها؟", a: "الإعلانات", rec: ["ads", "إعلانات بأهداف بالأرقام", "حدّد تكلفة الرسالة أو الطلب المستهدفة، ووقّف أي إعلان مش بيحققها."] },
+  { t: "المحتوى بتاعك بيتكلم عن مشاكل العميل مش عن نفسك بس؟", a: "المحتوى", rec: ["social", "محتوى من ناحية العميل", "اتكلم عن المشكلة اللي بتحلها والنتيجة اللي العميل هياخدها."] },
+  { t: "عندك آراء عملاء أو أعمال سابقة منشورة؟", a: "الثقة", rec: ["social", "اعرض آراء عملائك", "آراء العملاء وصور الشغل الحقيقي بتقنع أكتر من أي إعلان."] }
+];
+const ans = new Array(QS.length).fill(null);
+const OPTS = [["2", "أيوه"], ["1", "جزئياً"], ["0", "لأ"]];
+QS.forEach((q, n) => {
+  const li = el("li", "q"); const qt = el("div", "qt"); qt.append(el("small", null, q.a), document.createTextNode(q.t));
+  const seg = el("div", "seg"); seg.setAttribute("role", "group"); seg.setAttribute("aria-label", q.t);
+  OPTS.forEach(([v, l]) => { const b = el("button", null, l); b.type = "button"; b.dataset.v = v; b.id = "q" + n + "-" + v; b.setAttribute("aria-pressed", "false");
+    b.onclick = () => { ans[n] = +v; seg.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderScore(); }; seg.append(b); });
+  li.append(qt, seg); $("#qlist").append(li);
+});
+function bandOf(s) { return s >= 75 ? ["حضور قوي", "var(--ok)"] : s >= 45 ? ["محتاج تطوير", "var(--warn)"] : ["فرص كتير ضايعة", "var(--bad)"]; }
+function renderScore() {
+  const done = ans.filter(a => a !== null).length;
+  $("#progress").textContent = done < QS.length ? `جاوبت ${done} من ${QS.length}` : "خلّصت الفحص";
+  if (!done) { $("#score").textContent = "—"; $("#arc").setAttribute("stroke-dasharray", "0 264"); $("#band").hidden = $("#recWrap").hidden = $("#auditSend").hidden = true; return; }
+  const s = Math.round(ans.reduce((t, a) => t + (a || 0), 0) / (QS.length * 2) * 100);
+  $("#score").textContent = s + " / 100";
+  $("#arc").setAttribute("stroke-dasharray", (s / 100 * 264).toFixed(1) + " 264");
+  const [bt, bc] = bandOf(s); const b = $("#band"); b.textContent = bt; b.style.background = bc; b.hidden = false;
+  const weak = QS.map((q, n) => ({ q, v: ans[n] })).filter(x => x.v !== null && x.v < 2).sort((a, b) => a.v - b.v).slice(0, 3);
+  const r = $("#recs"); r.textContent = "";
+  if (!weak.length) { const li = el("li"); li.append(el("b", null, "ممتاز!"), document.createTextNode("حضورك قوي. الخطوة الجاية إنك تكبّر الإعلانات على اللي شغال.")); r.append(li); }
+  weak.forEach(x => { const li = el("li"); li.append(el("b", null, x.q.rec[1]), document.createTextNode(x.q.rec[2])); r.append(li); });
+  $("#recWrap").hidden = false;
+  const msg = `السلام عليكم، عملت فحص الحضور الرقمي في أبلكيشن ترند.\nالنتيجة: ${s}/100 (${bt})\n` +
+    (weak.length ? "أضعف النقط عندي:\n" + weak.map(x => "- " + x.q.rec[1]).join("\n") + "\n" : "") + "عايز أحجز استشارة مجانية.";
+  const a = $("#auditSend"); a.href = waUrl(msg); a.hidden = false;
+}
+$("#auditReset").onclick = () => { ans.fill(null); document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", "false")); renderScore(); };
+renderScore();
+
+/* Lead form */
+let lastMsg = "";
+$("#lead").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = $("#f-name").value.trim(), phone = $("#f-phone").value.replace(/\s+/g, "");
+  const err = $("#err");
+  if (!name) { err.textContent = "اكتب اسمك عشان نعرف نكلمك."; err.hidden = false; $("#f-name").focus(); return; }
+  if (!/^(\+?20|0)?1[0125]\d{8}$/.test(phone)) { err.textContent = "رقم الموبايل لازم يكون رقم مصري صحيح، زي 01012345678."; err.hidden = false; $("#f-phone").focus(); return; }
+  err.hidden = true;
+  const svc = SERVICES.filter(s => picked.has(s.k)).map(s => s.t);
+  lastMsg = `طلب عرض سعر جديد من أبلكيشن ترند\nالاسم: ${name}\nالموبايل: ${phone}\n` +
+    ($("#f-biz").value.trim() ? `البيزنس: ${$("#f-biz").value.trim()}\n` : "") +
+    `المجال: ${$("#f-field").value}\n` +
+    (svc.length ? `الخدمات: ${svc.join("، ")}\n` : "") +
+    (budget ? `الميزانية الشهرية: ${budget}\n` : "") +
+    ($("#f-msg").value.trim() ? `تفاصيل: ${$("#f-msg").value.trim()}` : "");
+  $("#waLink").href = waUrl(lastMsg); $("#done").hidden = false; $("#waLink").focus();
+});
+async function copyText(t, btn) {
+  const old = btn.textContent;
+  try { await navigator.clipboard.writeText(t); btn.textContent = "اتنسخ"; }
+  catch { btn.textContent = "انسخ يدوياً: " + t.slice(0, 20); }
+  setTimeout(() => btn.textContent = old, 1800);
+}
+$("#copyMsg").onclick = e => copyText(lastMsg, e.currentTarget);
+document.querySelectorAll("[data-copy]").forEach(b => b.onclick = () => copyText(b.dataset.copy, b));
+
+/* One featured video plays at a time */
+document.querySelectorAll(".feat video").forEach(v => v.addEventListener("play", () => document.querySelectorAll("video").forEach(o => o !== v && o.pause())));
+addEventListener("hashchange", () => document.querySelectorAll("video").forEach(o => o.pause()));
+
+/* Videos */
+const VIDEOS = [{"slug":"trend","name":"من شغل ترند","folder":"1Bh9QGJ6dmtLbiw5v84lAxeBLR7GDJDwh","vids":[{"id":"14uSKwZbaMC8hbVxIB2EJbw0A160SuLzg","t":"تهنئة العيد","v":true},{"id":"1ZA9Teo44IG_gahjGupyUGtN8svy-ZoiO","t":"قالب نشر","v":true},{"id":"1lR-xKQChY2F3zOZxGwawc5F85OVjfpBh","t":"قبل وبعد","v":true}]},{"slug":"zidan","name":"زيدان جروب","folder":"1B_p8KO76bre0wwlWLwIfnreWoEnTB3gP","vids":[{"id":"1Btf1ThLFSzvROy84kgU6XvC8F9Qjp99r","t":"فيديو 1","v":false},{"id":"1XnnE_9ly7v5Tya1xwb874oTHxK9cP3A_","t":"جولة 1","v":true},{"id":"1KG95_KNf_uafJVVB39gRlieimW7uLZ96","t":"ريل 1","v":true},{"id":"1BBYQIXCdJ3uSxIngU7UfBJhFTz7pUAgu","t":"ريل 2","v":true},{"id":"1OQPGPOYs5nYvT_AkdJQjXLqqUE3Sh0sg","t":"ريل 3","v":true},{"id":"1jekyDcnnhB81b-PX-qdLI-OF9xf2brku","t":"ريل 4","v":true},{"id":"1kCfy47I0f0M8P2Kfipg9BUQkVzvATDK7","t":"ريل 5","v":true},{"id":"1thRZPLH8r_yjeyzVICC5U_7ZFm5wCmPN","t":"ريل 6","v":true},{"id":"1awcRm9x-eU7TukXa3JkZp29UcbXrrue-","t":"ريل 7","v":true},{"id":"1UY92dUnBHqLndp_6PwZhvukOjPqd4Ujy","t":"ريل 8","v":true},{"id":"13rPjZvUWBnMu2PCDohcxpc3gMB6ovfgQ","t":"ريل 9","v":true},{"id":"1IWA9VHqpJgavOfJUfnLlmWOPoxIlH2hM","t":"جولة 2","v":true},{"id":"1fdbaQBVS5OUbEdYw5JXpSb9kPIFRFpfi","t":"فيديو 2","v":false},{"id":"1AG7ZjL3tprsUibr6dQdRE407H82pMozK","t":"الجسر للبرج التالت","v":false}]},{"slug":"eagle","name":"Egyptian Eagle","folder":"1sF8Nqiee6HY1Ob0G26WhDAC1MaBCZSCY","vids":[{"id":"10URH_UD5XfE1d0lIcyFp5SkPbGAtv2-V","t":"فيديو 1","v":true},{"id":"1NQM4hxW0KbkRK4N9EhaMz0hY_-E0ZXDD","t":"فيديو 2","v":true},{"id":"1bcjXerZoqTm1beGsPSEcmKxypXKXxFhK","t":"فيديو 3","v":true},{"id":"1x3Hz9Hxf3kKTTe2aEtFrNDoD-cOEJqQu","t":"فيديو 4","v":true},{"id":"1OiPRxgVX27CBxZtAFPaL6FwdMA4JtUGN","t":"فيديو 5","v":true},{"id":"1u17ZsisAB0e_di7m7Mm8lD69awLS6ali","t":"فيديو 6","v":true},{"id":"1QYOR3A-UfzSlgIW06R8joFU9dXfFhS5h","t":"تهنئة العيد","v":true},{"id":"1kNlATKhItk7Xo3exYDhwBHePP67NfjBs","t":"فيديو 7","v":false},{"id":"1hxNRblkguJbhLXyuzfTpxwPe2dvfwPMb","t":"فيديو 8","v":true},{"id":"1bmpftSRYemmtywa0KjbmpA_n4AzXM656","t":"برومو","v":false}]},{"slug":"dr-abdelrahman","name":"د. عبدالرحمن","folder":"1uaSeNy5nnh70T-anHjsc4GWAPPkne1tG","vids":[{"id":"1_MnDLRCZhtj64PzOJ5nlaYcq-WgKStNu","t":"ريل 1","v":true},{"id":"1oju2LkwdbVF_31FqwPLMV8sAKFztkCNr","t":"ريل 2","v":true},{"id":"1qjYVFD6WGw4ib6i1J63Oh6UQ_YYj0cDn","t":"ريل 3","v":true},{"id":"1Sp3krQXgCA4NiijOYyOQS1CFaYTzUI71","t":"ريل 4","v":true},{"id":"1EeXI2sYTuNKgn3GTbeAbRzu-bWnZKBK0","t":"ريل 5","v":true},{"id":"1unR2_aisdyKephd-MVIjsC_zRYbmuIql","t":"ريل 6","v":true},{"id":"1WVVzOzzd7NXfFAQG_GFKEWF2b0eKkxKd","t":"ريل 7","v":true},{"id":"1Q7z_ai4XuKVEIyBZtXk5KX7h5_NEW1IL","t":"ريل 8","v":true},{"id":"1U8zGfiCg_neSuNo-7OY3didJFwa3voUU","t":"ريل 9","v":true},{"id":"1g_o9SBE99mTzUWYUneXeW5vyLEVGAKbe","t":"ريل 10","v":true},{"id":"1hHK8ORGCTe6xh-vUJFzrRWNzu9zOQWMj","t":"ريل 11","v":true}]},{"slug":"car-star","name":"Car Star","folder":"1fzHQTlZQ--DQ04E6vH8gfTK-JgfwsRb9","vids":[{"id":"1NyGl796rvRa1BN1oR5zWIzPUJs37D7gm","t":"فيديو 1","v":true},{"id":"17roSfg-9bTCmLvgNfOwjyCzXGZY-QFtg","t":"فيديو 2","v":true},{"id":"1XgBmurAWlkyxkffseEtTzAuBH4g_MqWr","t":"ريل 1","v":true},{"id":"1tBRhFgbtancryXGvv7U7YnXVY8lThE8L","t":"ريل 2","v":true},{"id":"1aIW2hepGUcSUkVFjg_g6Ur51j0kPEklb","t":"ريل 3","v":true},{"id":"1KPLkVdtSxJqoEvaXDBp_4ziuuzvm3bB3","t":"ريل 4","v":true}]},{"slug":"trio","name":"TRIO Auto","folder":"1c7f2K0T4Fo4isSrrMMoP8F65DLF8dxvA","vids":[{"id":"1iznepOXVt8s-CEv-0aang5tlnyP4cHFC","t":"Chery Tiggo 7 Pro Max","v":true},{"id":"1y4ArFUCjB2-G9j9dWmnLcHmXzPsXUw-R","t":"فيديو","v":true},{"id":"18N0lbICullmczwAXsf0F1muxmTzQzgb_","t":"GAC GS3 Emzoom","v":true},{"id":"1ZNq9eYTHw-faKgJvhttYQ7yFOOh-9Ui-","t":"برومو","v":true},{"id":"1bHY0sUvmK03MB063nIdLHwGTK-yY7zxy","t":"شوريل","v":true}]},{"slug":"engaz","name":"إنجاز العقارية","folder":"1-yollX9kwAuJjShLjIQB4IH9ziykS4Tj","vids":[{"id":"1YXKPAku63JxQZ75c37K7vBGxpCjB-vFF","t":"الحضانة","v":false},{"id":"1qrDSRMFr1cimi-1eQveOqYSYHp4pCDfw","t":"تهنئة العيد","v":true},{"id":"1NSRm6Ar_PPtcU9gwR0cIA4hZyvGDgNti","t":"فيديو 1","v":false},{"id":"1Snc724t0XrVy-YA1gNrbcuIRhlwxXTpT","t":"فيديو 2","v":false},{"id":"1yhy-P6yjX0rCrPpa4Tfonwufrymavugm","t":"فيديو 3","v":false}]},{"slug":"art-design","name":"Art Design","folder":"1dlL408OQMzEQVv8oecjMDkXTplyNu_Uy","vids":[{"id":"1HDlgWLQ_3nuQtnoYIo6eODbt1_SC-I5i","t":"فيديو 1","v":false},{"id":"1xl3ZAANZdeKWQui6PM3ZgHTHaWJbI_Wt","t":"فيديو 2","v":false},{"id":"1fF0aNFA8r7jiBAh1gIAHkgZiziwlbCtZ","t":"فيديو 3","v":false},{"id":"1bJ2BcRwjaKzx1AimaU3c924yL-A6Bj-W","t":"فيديو 4","v":false},{"id":"1wVWIaED6UoJ7YqFGuOvrUxPXHSmKce5M","t":"فيديو 5","v":false}]},{"slug":"al-sharqa","name":"Al Sharqa","folder":"1XF34qdxNYN2HkK3p_SJrMZuwxSZuJSAn","vids":[{"id":"1uFqS80F15yoCLsUVyrYtUkZ8A5oL_4sV","t":"تهنئة العيد","v":true},{"id":"1KBElcFKA6q6KzksuGP7-wrA6ZFpKsBIe","t":"فرع حلوان","v":true},{"id":"1-ibyKfAZ9cq_3_dYz9cHuZh3pe9d8LXq","t":"د. علي","v":false},{"id":"1MIkXbT-Sr1CTAx3SP0Osn2Rr87rfGhdT","t":"فيديو","v":true}]},{"slug":"dalilk","name":"دليلك","folder":"117NP06AIZlYvrNn7Aoshe9_aT9vbBJKT","vids":[{"id":"1KzRd4bRfcU_gC6fimiXr6yH23I6wRrWE","t":"ريل","v":false}]}];
+const DRIVE_ROOT = "https://drive.google.com/drive/folders/1e0gUivfVcvqWyUVZmJaFPmiTTRv-19BL";
+const vTotal = VIDEOS.reduce((t, g) => t + g.vids.length, 0);
+const vReels = VIDEOS.reduce((t, g) => t + g.vids.filter(v => v.v).length, 0);
+(() => {
+  const st = $("#vstats");
+  [[vTotal, "فيديو"], [VIDEOS.length - 1, "عملاء"], [vReels, "ريلز عمودي"], [vTotal - vReels, "فيديو أفقي"]].forEach(([n, l]) => { const s = el("span"); s.append(el("b", null, n), document.createTextNode(" " + l)); st.append(s); });
+  $("#vTeaser").textContent = `${vTotal} فيديو لـ ${VIDEOS.length - 1} عملاء: ريلز وإعلانات وجولات تصوير في العقارات والسيارات والعيادات.`;
+})();
+let vCat = "all";
+function renderVideos() {
+  const g = $("#vGrid"); g.textContent = "";
+  VIDEOS.filter(c => vCat === "all" || c.slug === vCat).forEach(c => c.vids.forEach(v => {
+    const a = el("a", "vcard" + (v.v ? "" : " h")); a.href = "https://drive.google.com/file/d/" + v.id + "/view"; a.target = "_blank"; a.rel = "noopener";
+    a.setAttribute("aria-label", "شغّل " + v.t + " – " + c.name);
+    const th = el("div", "vthumb"); const i = el("img"); i.src = "thumbs/" + v.id + ".jpg"; i.alt = ""; i.loading = "lazy";
+    const pl = el("span", "play"); pl.innerHTML = '<svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg>';
+    th.append(i, pl, el("span", "fmt", v.v ? "ريل 9:16" : "16:9"));
+    const m = el("div", "vmeta"); m.append(el("b", null, v.t), el("span", null, c.name));
+    a.append(th, m); g.append(a);
+  }));
+  const cur = VIDEOS.find(c => c.slug === vCat);
+  $("#driveAll").href = cur ? "https://drive.google.com/drive/folders/" + cur.folder : DRIVE_ROOT;
+  $("#driveAll").textContent = cur ? `افتح فولدر ${cur.name} كله ↗` : "افتح الفولدر كله ↗";
+}
+[{ slug: "all", name: "الكل", n: vTotal }, ...VIDEOS.map(c => ({ slug: c.slug, name: c.name, n: c.vids.length }))].forEach(c => {
+  const b = el("button", "chip", c.name); b.type = "button"; b.id = "vf-" + c.slug; b.append(el("span", "n", c.n)); b.setAttribute("aria-pressed", c.slug === vCat);
+  b.onclick = () => { vCat = c.slug; document.querySelectorAll("#vFilters .chip").forEach(x => x.setAttribute("aria-pressed", x === b)); renderVideos(); };
+  $("#vFilters").append(b);
+});
+renderVideos();
+
+/* Routing */
+const VIEWS = ["home", "work", "videos", "services", "check", "contact"];
+function route() {
+  const v = VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "home";
+  document.querySelectorAll(".view").forEach(s => s.hidden = s.dataset.view !== v);
+  document.querySelectorAll(".topnav a, .tabs a").forEach(a => a.getAttribute("href") === "#" + v ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
+  window.scrollTo(0, 0);
+}
+addEventListener("hashchange", route); route();
+</script>
+
+<script>if ("serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));</script>
+</body>
+</html>
