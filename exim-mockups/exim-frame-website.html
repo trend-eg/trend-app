@@ -55,6 +55,10 @@ button:focus-visible,input:focus-visible,.upload:focus-within{outline:3px solid 
 .credit a b{font-weight:900;white-space:nowrap}
 .credit a:hover{filter:brightness(1.1)}
 .credit a:focus-visible{outline:3px solid #b0233c;outline-offset:3px}
+.zoombar{display:flex;align-items:center;gap:12px;width:100%;max-width:480px;margin-top:12px;direction:ltr}
+.zoombar input{flex:1;min-width:0}
+.zb{width:42px;height:42px;flex:none;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:900 24px/1 var(--font);cursor:pointer;display:grid;place-items:center;padding:0}
+.zb:hover{border-color:var(--teal-2);color:var(--teal-2)}
 </style>
 
 </head><body>
@@ -71,7 +75,12 @@ button:focus-visible,input:focus-visible,.upload:focus-within{outline:3px solid 
   <div class="main">
     <div class="stage">
       <canvas id="cv" width="1080" height="1350" aria-label="معاينة الصورة بالفريم"></canvas>
-      <p class="hint" id="hint">اسحب الصورة بإيدك علشان تظبط مكانها</p>
+      <div class="zoombar">
+        <button type="button" class="zb" id="zoomOut" aria-label="تصغير الصورة">−</button>
+        <input type="range" id="zoom" min="1" max="3" step="0.01" value="1" aria-label="تكبير وتصغير الصورة">
+        <button type="button" class="zb" id="zoomIn" aria-label="تكبير الصورة">+</button>
+      </div>
+      <p class="hint" id="hint">اسحب الصورة بإيدك علشان تظبط مكانها، وكبّرها أو صغّرها من الشريط</p>
     </div>
 
     <div class="panel">
@@ -99,11 +108,6 @@ button:focus-visible,input:focus-visible,.upload:focus-within{outline:3px solid 
           <button type="button" data-v="1" aria-pressed="false">تقبّل الله عمرتي</button>
         </div>
       </div>
-
-      <label class="step">
-        <span>تكبير الصورة</span>
-        <input type="range" id="zoom" min="1" max="3" step="0.01" value="1">
-      </label>
 
       <label class="step">
         <span>اسمك (اختياري)</span>
@@ -220,6 +224,8 @@ function seg(id,key,parse){$(id).addEventListener('click',e=>{const b=e.target.c
   $(id).querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));st[key]=parse(b.dataset.v);st.ox=st.oy=0;$('result').hidden=true;draw();});}
 seg('fmt','fmt',v=>v);seg('ttl','title',v=>+v);
 $('zoom').addEventListener('input',e=>{st.zoom=+e.target.value;draw();});
+const zstep=d=>{st.zoom=Math.min(3,Math.max(1,st.zoom+d));$('zoom').value=st.zoom;draw();};
+$('zoomIn').addEventListener('click',()=>zstep(.15));$('zoomOut').addEventListener('click',()=>zstep(-.15));
 $('name').addEventListener('input',e=>{st.name=e.target.value;draw();});
 
 let drag=null;

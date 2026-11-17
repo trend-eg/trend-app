@@ -53,6 +53,10 @@ button:focus-visible,input:focus-visible,.upload:focus-within{outline:3px solid 
 .credit a b{font-weight:900;white-space:nowrap}
 .credit a:hover{filter:brightness(1.1)}
 .credit a:focus-visible{outline:3px solid #b0233c;outline-offset:3px}
+.zoombar{display:flex;align-items:center;gap:12px;width:100%;max-width:480px;margin-top:12px;direction:ltr}
+.zoombar input{flex:1;min-width:0}
+.zb{width:42px;height:42px;flex:none;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:900 24px/1 var(--font);cursor:pointer;display:grid;place-items:center;padding:0}
+.zb:hover{border-color:var(--teal-2);color:var(--teal-2)}
 </style>
 
 <div class="credit"><a href="https://www.facebook.com/trend.agency.eg" target="_blank" rel="noopener"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABbCAYAAACMJYBWAAAKeUlEQVR42u2da6xcVRXHf+ucubVoqeWhwcRqE02JCgGxGhIxBBRBHg2PRCrBiKl8qGC0kqoYqokPIGnF4iNiiqU0jcYHSa2CgHyQKgRNoIKNCLbVamwtUPu4UNremfn74axNt8d5nDN35t47d+Ykkzn3znnsvf5rr/9ea+2zjtGnmyQDzMzqkuYC1wAXAvOBOUAywU06DPwTeAK4H7jPzHZ7W1MzqzFdNknmACBpqaTdmnrbTkm3S3pLvs3TQfipf6+LOlyVVJNUn0Sh170Nteh/o5I+F7U/6XcAUv++zTt4eJKF3gqMsejvjZJm50GwfhO+mdUkvR94CBgDKlO8HwKqwAjwGHA+MEpGYOo3ABLv0B+ABUANSPuk+WMOwv0+WUiAetJn2l8H3ufCr/eR8HHhjwEXADf5rCixPgKgYmZVSauAT7r2VyaxSeZaXEaGcsWpAu8AtvcTAKHD24A3T6Gm1UoCUXXFudPMru03DpgBfByY6dpkOe2yEprY7Nxm17Ho8wbgNOBM4Fj/vV7Q+ZN/HwDexnAbl0K8UdJNPtdXbv7fagvHLbE+7HRlijSl7pMCJJ0ObATmFhwJwWxtGKrx+L3yGb7/LkmHCnrj4fetQyl2B4gR/17tgh0raIoOWd/HJiZQzmamFuERAee4h16UkKkEOzbcxg1OXdLfomlmoVlZRdKp7qWpydSLJr91ctxEOUiUaLca7Of/rgHbzexFSdZsJABHSjqIByvA74FjhkrcdlsE/NjDH9UmjuIJwIwC2h9M1I4KsNs9yzKOzCBsxtEA2qPAfc6XjTJbiYdJLvfzqm1GgfyzueKu/bwyxDEgWwghPwNcamajjcxPAEXSScD1Lti0ALgGPJSQ5TCH2/87ShXgX8AFZva8pKSB8M21X8D3geNdka2N9ifAXuDeBPhdGEZDub9in1PgOeB8M/t7FApvNIusSvoSsJBi+Ylgwn5uZs+ZpNcCT3uAadB5IJjhfcAHzOzxEAZv5HyZ2Zika4C7Ctj9oP1hhJwObEnMbD/wixw6gyp8Aw4CF7cRfsWFfznwA4pn5sJx3zOzPxESMpJOAZ6i/7JMXXOkvO914BIze6CN8KuSLiILpqUN/I9mpF4BtpCFsQ8B9cTt2xYfRqlPvQZN+EEzF7vwR9oI/xzgHj+niNkOpP48cJmZvfRKaMMjeomkOZL+6kGiIxqcLfT1y3FgrUm8B0nvlLS/RPw/HPOCpDPia+Xnskg6WdI/ooVOY1NgsVMv1+0E4a8JGt5o9Vok/LdK2tWB8PdJWhDu0SykGkB4k6RfDoDmB6W6xy1A2kT4QS4nRRaiWmKV3EuSzmop/PzNfP88SXdLekbSi9MQgDFJdwatbyP82ZI2lxR+yAksbCV8axJUInh9fuLrPdBk04R0DThoZltDn5uEGPBwxAPA2QXn+kQxpGVmtjL4DOVamQ3JaT0lddPTUAmjBcAbSma5Aq+sKmR2CjQyzJK68bFxCqvpp4ugWES6a0vOCsNxd7ci9ZYmqMcal7opa5cAybfxoJmNthKaXzc/L280R4/vsSd+cMKvk/pc/1vApyJzUiR6WiFbHXFZuGSL5M3EDnX/ni/pgK+jGfX9Aw3+F773+v4tjYZz9JDGLEnbcufn9+PPfv/tPblpZsW/by6p+cE8bZI0M1iNIrKZ6DU2KUdXkpUhzFcVOHY2MKtke0YaeLk3AjdG+YCioesngYVmdshD1/WpCACUyxvHCe4ix6pkRDeYtdTMjki6AbjZr1UmuLYN+JCZ7Sv7PNhkAGAlj7WC58THWUFFGHNtPSLpOmBlJPx21wiBy12etNnVycN4yRQWfpnzrIMR+LKTe13SYuA7kUYXEX4C7AcuNLOtnT4J2S9ZsF7MJEaA3ZLOA1ZTfJl5aMtht/l/dP7oKJfSLwBYD641Anzbw8pWQvghcfNhM9vULG8wVTlAPQKg0+t+ooW/0CxvUPG8wcaOQgzTdARYh6OkVmLWFIT/RTNb0w3hTwYAM6cYsGlB4YfHYW83s1u6JfyJBMAiZynMIvplpAaH7Kdm9hn3lqvduvh0ImH1SPgVsrVTV4dVcN2M7wwXY7W3+WFp4hE4micZAtDbqWrwcne6o7Wnxeq4gQDg1ZMwVf4PcJGZbe9lvZ9+ASApoP3WRQAS4IXg5XYwaRg4E6QuknB4BmC+pJXu5aaDDsBEZ5VSB+EGSZd6niAdjoCJJ/U6cKekuV6nKBlUACZjOUyoTXQC8EMXftfrviXT3JR0wxRVgbOAW30mlPYzAJ1qT73Ada3HICyTdEm3+WBIwsWUJnElWCtpXjf5YDgNLccHxwM/8iXsXeGDIQmXN0VnAt/sFh/0CwAzenTdsuGFEIq+TtLVzgeVQQCgyAixDrVaHZxTA+6QdMp4SXm6ADBCsVVs8VYFfhU5XGXBfg3wE0mzAHXKB4M8AlKypPxql0O1pNyqZEX3VnuYOh1kADoFbQ5ZfYe/uH0vwwmBDxZJWtopHwz6NHSGZ7quJHtAu6zPEWZGKySd1QkfDHowruaPJz0FLIkItqyTlpLFi14H1Ms4aQMfDTUzSZphZuuAOyLTUkaGNbKSles9Z1z4aaBBn4bGIyEFPg083gEfBFP0QUlfKZPEGeYDIg5xPlhEturZCvCBGpDyckkXFeWDIQBHTVHdk+9byV4IlBQYBdZAniFoVyiJM10ASOhCvMgFVjGzDcCKDvlAwIlkQbuUNkG7IQc05oMK8AXg4XHwwXuBFe2CdsNwdINZEUcLc19FVrosKRmuCCAslXRFKz4YjoDWfLAT+GgUL1KJ9gTQVrdK4gxJuD0fPAgs78AUBT44DljfjA+GJqgAH5jZ14B7S4IQ6oeOOR98Pby4ZzgCSvKBa+3HgB0u1HpBMxT8gzHg85LO9ZGVDgEowQdkxVn3OClXS464mJ9ujd6FNgSgAz54FFjG/wbtVMAshlHzbuCMQPLTDQDrMQhVB2EVWRX14KQVCVnEWbdz4/YOH1EqT8oJcC3ZkzNh6Xr+nQX1XLvjtr29H0l4bzvB0MM1/DlSNq9ddCVZuYM8HzSqbxHvnxiD0i8AbGnz+z6y9yD0fCREfPAkWTozzRFzuyJR+/vFBMXz6F/7/+p5jYzqNDySG/4TwQdryJL6IxEf5AWuiCdEln/uCxNU84Y/aGbbWjwkFzq7jt4u0m3EBylZWbPNDkKtyf2DMhnwm34wQYq+l7cK50Yxlk3euYbveOkRH8jMDpMlcUZzMaPYHAVgngUe8/7UpyoA4Q3UoS7DZneEagUEcj1ZGZlkgkxR3U3Rs8DiJveNK6x81UscJBNazC8qind2i7rL+Xew3xafW+IeV+WK6bWqe32qn5OMs3+h2N/K3H1rkl4OJZLL9GciAAgNrOaEtE/Skk4aG93nI9EbTkO54arfL753twAIhV5TSb+NKi6GqosPSzp2vLVTuwHAOS20cYekb0iaNx5Nie41X9L6HBD57bRuABBfQ9JcSTuje6yVdEwAanKM+lGhLHDtG/Uy+Y9I+q6kKyQdlz9+vPfz/ZMlfVbSzyQ9IelpSX92TZ3bTcFE/bxY0r+9CiOtQP4vR5o5gTYfzXIAAAAASUVORK5CYII=" alt=""><span>تنفيذ شركة ترند للتسويق الإلكتروني - <b dir="ltr">Trend Agency</b></span></a></div>
@@ -68,7 +72,12 @@ button:focus-visible,input:focus-visible,.upload:focus-within{outline:3px solid 
   <div class="main">
     <div class="stage">
       <canvas id="cv" width="1080" height="1350" aria-label="معاينة الصورة بالفريم"></canvas>
-      <p class="hint" id="hint">اسحب الصورة بإيدك علشان تظبط مكانها</p>
+      <div class="zoombar">
+        <button type="button" class="zb" id="zoomOut" aria-label="تصغير الصورة">−</button>
+        <input type="range" id="zoom" min="1" max="3" step="0.01" value="1" aria-label="تكبير وتصغير الصورة">
+        <button type="button" class="zb" id="zoomIn" aria-label="تكبير الصورة">+</button>
+      </div>
+      <p class="hint" id="hint">اسحب الصورة بإيدك علشان تظبط مكانها، وكبّرها أو صغّرها من الشريط</p>
     </div>
 
     <div class="panel">
@@ -96,11 +105,6 @@ button:focus-visible,input:focus-visible,.upload:focus-within{outline:3px solid 
           <button type="button" data-v="1" aria-pressed="false">تقبّل الله عمرتي</button>
         </div>
       </div>
-
-      <label class="step">
-        <span>تكبير الصورة</span>
-        <input type="range" id="zoom" min="1" max="3" step="0.01" value="1">
-      </label>
 
       <label class="step">
         <span>اسمك (اختياري)</span>
@@ -217,6 +221,8 @@ function seg(id,key,parse){$(id).addEventListener('click',e=>{const b=e.target.c
   $(id).querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));st[key]=parse(b.dataset.v);st.ox=st.oy=0;$('result').hidden=true;draw();});}
 seg('fmt','fmt',v=>v);seg('ttl','title',v=>+v);
 $('zoom').addEventListener('input',e=>{st.zoom=+e.target.value;draw();});
+const zstep=d=>{st.zoom=Math.min(3,Math.max(1,st.zoom+d));$('zoom').value=st.zoom;draw();};
+$('zoomIn').addEventListener('click',()=>zstep(.15));$('zoomOut').addEventListener('click',()=>zstep(-.15));
 $('name').addEventListener('input',e=>{st.name=e.target.value;draw();});
 
 let drag=null;
