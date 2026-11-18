@@ -139,7 +139,7 @@ function rr(x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h
 function win(){const f=FORMATS[st.fmt];return {x:60,y:f.top,w:f.w-120,h:f.h-f.top-f.bottom};}
 
 function pattern(w,h){
-  ctx.save();ctx.strokeStyle='rgba(255,255,255,.07)';ctx.lineWidth=2;
+  ctx.save();ctx.strokeStyle='rgba(112,163,209,.35)';ctx.lineWidth=2;
   for(let y=0;y<h+80;y+=80)for(let x=0;x<w+80;x+=80){
     ctx.beginPath();const cx=x+40,cy=y+40;
     for(let i=0;i<8;i++){const a=i*Math.PI/4,r=i%2?16:36;ctx.lineTo(cx+r*Math.cos(a),cy+r*Math.sin(a));}
@@ -165,9 +165,9 @@ function draw(){
   ctx.fillStyle=C.teal;ctx.fillRect(0,0,f.w,f.h);pattern(f.w,f.h);
   // bottom wave
   const by=f.h-f.bottom;
-  ctx.fillStyle=C.fu;ctx.beginPath();ctx.moveTo(0,by+20);ctx.quadraticCurveTo(f.w/2,by-50,f.w,by+40);ctx.lineTo(f.w,f.h);ctx.lineTo(0,f.h);ctx.closePath();ctx.fill();
-  const g=ctx.createLinearGradient(0,0,f.w,0);g.addColorStop(0,C.fuDeep);g.addColorStop(1,C.fu);
-  ctx.fillStyle=g;ctx.beginPath();ctx.moveTo(0,by+60);ctx.quadraticCurveTo(f.w/2,by,f.w,by+80);ctx.lineTo(f.w,f.h);ctx.lineTo(0,f.h);ctx.closePath();ctx.fill();
+  ctx.fillStyle='#70a3d1';ctx.beginPath();ctx.moveTo(0,by+20);ctx.quadraticCurveTo(f.w/2,by-50,f.w,by+40);ctx.lineTo(f.w,f.h);ctx.lineTo(0,f.h);ctx.closePath();ctx.fill();
+  
+  ctx.fillStyle=C.fu;ctx.beginPath();ctx.moveTo(0,by+60);ctx.quadraticCurveTo(f.w/2,by,f.w,by+80);ctx.lineTo(f.w,f.h);ctx.lineTo(0,f.h);ctx.closePath();ctx.fill();
   // photo window
   ctx.save();rr(W.x,W.y,W.w,W.h,36);ctx.clip();
   if(st.img){const p=photoRect();ctx.drawImage(st.img,p.x,p.y,p.w,p.h);}
@@ -196,7 +196,7 @@ function draw(){
   if(st.name.trim()){
     ctx.font=`900 40px ${FONT}`;const nw=Math.min(ctx.measureText(st.name).width+80,W.w-40);
     const ny=W.y+W.h-44;
-    ctx.fillStyle='rgba(2,73,137,.92)';rr(f.w/2-nw/2,ny-38,nw,72,36);ctx.fill();
+    ctx.fillStyle='#024989';rr(f.w/2-nw/2,ny-38,nw,72,36);ctx.fill();
     ctx.fillStyle=C.white;ctx.fillText(st.name.trim(),f.w/2,ny+14,nw-40);
   }
   // footer
