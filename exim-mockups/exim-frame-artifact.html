@@ -5,7 +5,7 @@
 <style>
 /* Layout: one column on phones, preview beside controls on wide screens */
 :root{
-  --teal:#0c5d69; --teal-2:#138a99; --fuchsia:#d4146f;
+  --teal:#024989; --teal-2:#70a3d1; --fuchsia:#d33f91;
   --bg:#f3f6f6; --surface:#ffffff; --fg:#13292d; --muted:#5b6f73; --line:#d6e1e2;
   --font:'Cairo',system-ui,'Segoe UI',Tahoma,sans-serif;
 }
@@ -123,7 +123,7 @@ button:focus-visible,input:focus-visible,.upload:focus-within{outline:3px solid 
 
 <script>
 (() => {
-const C = {teal:'#0c5d69', tealDeep:'#083f48', fu:'#d4146f', fuDeep:'#a80f57', white:'#ffffff'};
+const C = {teal:'#024989', tealDeep:'#01305b', fu:'#d33f91', fuDeep:'#a82d72', white:'#ffffff'};
 const FONT = "'Cairo', Tahoma, sans-serif";
 const TITLES = [['أنا رايح العمرة مع إكسيم تورز','لبيك اللهم عمرة'],['تقبّل الله عمرتي مع إكسيم تورز','الحمد لله على تمام النعمة']];
 const FORMATS = {post:{w:1080,h:1350,top:250,bottom:270}, story:{w:1080,h:1920,top:360,bottom:380}};
@@ -192,7 +192,7 @@ function draw(){
   if(st.name.trim()){
     ctx.font=`900 40px ${FONT}`;const nw=Math.min(ctx.measureText(st.name).width+80,W.w-40);
     const ny=W.y+W.h-44;
-    ctx.fillStyle='rgba(12,93,105,.92)';rr(f.w/2-nw/2,ny-38,nw,72,36);ctx.fill();
+    ctx.fillStyle='rgba(2,73,137,.92)';rr(f.w/2-nw/2,ny-38,nw,72,36);ctx.fill();
     ctx.fillStyle=C.white;ctx.fillText(st.name.trim(),f.w/2,ny+14,nw-40);
   }
   // footer
